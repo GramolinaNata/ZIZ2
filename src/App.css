@@ -1,0 +1,27 @@
+.page-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--beige);
+  background: var(--white);
+}
+
+.page-tab {
+  padding: 13px 32px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--gray);
+  transition: color .2s, border-color .2s;
+}
+
+.page-tab--active {
+  border-bottom-color: var(--dark);
+  color: var(--dark);
+}
+
+.page-tab:hover:not(.page-tab--active) {
+  color: var(--dark);
+}
